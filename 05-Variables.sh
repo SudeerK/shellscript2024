@@ -8,7 +8,7 @@
 #echo " Username is: $Username, Password is : $Password"
 
 echo "Enter the username: "
-read -s Username
+read -s Username #Value entered will be attached to Username. Same ffor pwd.
 echo "Enter Password: "
 read -s Password
-echo " Username is: $Username, Password is : $Password"
+echo " Username is: $Username, Password is : $Password" #Just for confirmation. Donot print.
