@@ -7,8 +7,8 @@
 
 # Not effective way of writing the code as above. Lets create variables.
 
-PERSON1=Ramesh
-PERSON2=Suresh
+PERSON1=Ram
+PERSON2=Raheem
 echo "$PERSON1::Hello $PERSON2! Good Morning"
 echo "$PERSON2::Hi $PERSON1! Very Good Morning"
 echo "$PERSON1:: How are you $PERSON2"
