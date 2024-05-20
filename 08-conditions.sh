@@ -11,7 +11,7 @@ echo "Given Number:$Number is less than 100"
 fi
 comment
 
-if [ $Number>50 ]
+if [ $Number gt 50 ]
 then 
 echo "Given Number:$Number is greater than 50"
 else
