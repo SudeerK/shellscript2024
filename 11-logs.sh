@@ -2,7 +2,9 @@
 
 ID=$(id -u)
 
-echo "Script Name is : $0"
+# echo "Script Name is : $0" #this will print the script name
+TimeStamp=$(date +%F-%H-%M-%S)
+echo "$TimeStamp"
 
 VALIDATE()
 {
