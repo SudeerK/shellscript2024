@@ -1,5 +1,5 @@
 #!/bin/bash
-ID = $(id -u)
+ID=$(id -u)
 if [ $ID -ne 0 ]
 then
 echo "Not a root user."
