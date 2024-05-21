@@ -4,7 +4,9 @@ ID=$(id -u)
 
 # echo "Script Name is : $0" #this will print the script name
 TimeStamp=$(date +%F-%H-%M-%S)
-echo "$TimeStamp"
+LOGFILE = "/tmp/$0-$TimeStamp.log"
+
+#echo "$TimeStamp"
 
 VALIDATE()
 {
@@ -26,7 +28,7 @@ else
 fi #reverse of if indicating end.
 
 yum install mysql -y
-VALIDATE $? "mysql"
+VALIDATE $? "mysql" &>> $LOGFILE
 
 yum install git -y
-VALIDATE $? "git"
+VALIDATE $? "git" &>> $LOGFILE
