@@ -8,7 +8,7 @@ N="\e[0m"
 
 if [ $ID -ne 0 ]
 then 
-echo -e "$R ERROR: $N Not a root user"
+echo -e "$R ERROR: $N Not a root user, Please run with root access"
 else
-echo "root user"
+echo "You are a root user"
 fi
