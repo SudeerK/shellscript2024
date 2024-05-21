@@ -6,7 +6,8 @@ ID=$(id -u)
 TimeStamp=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TimeStamp.log"
 
-#echo "$TimeStamp"
+echo "$TimeStamp"
+echo "$LOGFILE"
 
 VALIDATE()
 {
