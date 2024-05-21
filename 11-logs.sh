@@ -6,8 +6,8 @@ ID=$(id -u)
 TimeStamp=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TimeStamp.log"
 
-echo "$TimeStamp"
-echo "$LOGFILE"
+#echo "$TimeStamp"
+#echo "$LOGFILE"
 
 VALIDATE()
 {
@@ -28,8 +28,8 @@ else
     echo " You are a Root user"
 fi #reverse of if indicating end.
 
-yum install mysql -y
-VALIDATE $? "mysql" &>> $LOGFILE
+yum install mysql -y &>> $LOGFILE
+VALIDATE $? "mysql" 
 
-yum install git -y
-VALIDATE $? "git" &>> $LOGFILE
+yum install git -y &>> $LOGFILE
+VALIDATE $? "git"
