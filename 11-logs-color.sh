@@ -16,16 +16,16 @@ VALIDATE()
 {
     if [ $1 -ne 0 ]
     then 
-        echo "Error::$2 Installation is $R failed $N"
+        echo -e "Error::$2 Installation is $R failed $N"
         exit 1
     else
-        echo "$2 Installation is $G success $N"
+        echo -e "$2 Installation is $G success $N"
     fi
 }
 
 if [ $ID -ne 0 ]
 then
-    echo "$R Error:: $N Please run this script with root user."
+    echo -e "$R Error:: $N Please run this script with root user."
     exit 1 #Any value other than 0 can be given so that it terminates here
 else
     echo " You are a Root user"
