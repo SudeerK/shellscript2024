@@ -4,6 +4,7 @@ ID=$(id -u)
 
 R="\e[31m"
 G="\e[32m"
+Y="\e[33m"
 N="\e[0m"
 
 if [ $ID -ne 0 ]
@@ -13,4 +14,4 @@ else
 echo "You are a root user"
 fi
 
-echo "all arguments: $@"
+# echo "all arguments: $@" #if we pass args while executing then it will be printed here.

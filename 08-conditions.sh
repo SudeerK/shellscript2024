@@ -10,7 +10,7 @@ else
 echo "Given Number:$Number is less than 100"
 fi
 comment
-# we can give comment as above as well. Instead of word comment it can be any oth er word.
+# we can give comment as above as well. Instead of word comment it can be any oth er word. FYI Above prog works
 
 if [ $Number -gt 50 ]
 then 
